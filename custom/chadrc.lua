@@ -17,4 +17,8 @@ M.plugins = require "custom.plugins"
 -- check core.mappings for table structure
 M.mappings = require "custom.mappings"
 
+if vim.fn.exists("g:neovide") then
+  vim.g.neovide_input_macos_alt_is_meta = true
+end
+
 return M
